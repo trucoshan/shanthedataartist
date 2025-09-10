@@ -1,5 +1,7 @@
 # shanthedataartist
-Every empire stands on grains of dust. This is A personal Collection of my projects. Please do read the readme.
+Every empire stands on grains of dust.
+
+This is A personal Collection of my projects.
 
 ----
 
