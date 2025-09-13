@@ -108,8 +108,7 @@ The aim is to demonstrate how structured **data cleaning, transformation, and vi
 
 ## 🔎 Sample Visuals
 
-![Late Deliveries Map](map.png)  
-👉 [Click here for interactive map](map.html)
+![Late Deliveries Map](map.png)
 
 ---
 
