@@ -45,3 +45,96 @@ For this task, I analyzed a global restaurant dataset to uncover cuisine trends,
 
 ---- 
 
+# 📦 FedEx Exploratory Data Analysis (EDA) Project
+
+This project analyzes **10,324 FedEx shipment records** to uncover patterns in **delivery delays, shipment costs, fulfillment methods, and vendor contracts**.  
+The aim is to demonstrate how structured **data cleaning, transformation, and visualization** can translate raw logistics data into meaningful **business insights**.
+
+---
+
+## 🚀 Project Objectives
+- Identify the factors driving **on-time vs delayed deliveries**.
+- Explore the relationship between **freight costs, shipment weights, and modes of transport**.
+- Compare fulfillment methods (Direct Drop vs RDC) and **INCO terms**.
+- Provide actionable **business takeaways** for cost optimization and reliability improvement.
+
+---
+
+## 🛠️ Tech Stack & Tools
+- **Python Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Plotly, Folium  
+- **Data Cleaning**: Regex, datetime parsing, missing-value handling, outlier treatment  
+- **Visualization**: Static plots (Matplotlib/Seaborn), interactive charts (Plotly), geospatial maps (Folium/Choropleth)  
+- **Data Size**: 10,324 rows × 33 columns  
+
+---
+
+## 📂 Project Workflow
+
+1. **Data Import & Setup**
+   - Loaded CSV dataset into Pandas DataFrame.  
+   - Inspected shape, column types, null values, and duplicates.  
+
+2. **Data Wrangling**
+   - Standardized column names.  
+   - Converted date fields to datetime.  
+   - Resolved messy text fields (`Weight`, `Freight Cost`) into numeric features.  
+   - Engineered new columns:
+     - `Delivery_Delay` (days early/late vs schedule)  
+     - `Delivery_Status` (*Early*, *On-Time*, *Late*)  
+
+3. **Exploratory Data Analysis**
+   - **Univariate**: Histograms, boxplots, violin plots to study delay distributions and outliers.  
+   - **Bivariate/Multivariate**: Scatterplots (weight vs cost, cost vs delay), barplots (fulfillment vs delay), pie charts (management concentration).  
+   - **Geospatial**: Choropleth map showing % of late deliveries by country.  
+
+4. **Insights & Business Takeaways**
+   - Direct Drop = most reliable; RDC adds variability.  
+   - Air = lowest delay % (9%), Trucks = highest (16%).  
+   - Ocean = cheapest for heavy loads, but delays common.  
+   - Freight cost does **not** guarantee on-time delivery.  
+   - Outliers (very high weight/cost) distort analysis and require special handling.  
+
+---
+
+## 📊 Key Findings
+
+- **Air transport dominates** (61% shipments) and is most reliable.  
+- **Truck shipments** suffer the highest variability in delays.  
+- **Ocean shipments** are cost-efficient but risk-prone.  
+- **EXW Incoterm** emerges as the most reliable contract type.  
+- **RDC operations** show high unpredictability, needing optimization.  
+
+---
+
+## 🔎 Sample Visuals
+
+![Late Deliveries Map](late_deliveries_map.png)  
+👉 [Click here for interactive map](late_deliveries_map.html)
+
+---
+
+## 📌 Business Recommendations
+
+- Use **Air** for time-critical shipments despite higher costs.  
+- Optimize **RDC workflows** to reduce both early and late deliveries.  
+- Reserve **Air Charter** for emergencies (too costly otherwise).  
+- Employ **Ocean** for bulk, non-urgent cargo.  
+- Track **outlier shipments** (extreme cost/weight) as risk factors.  
+
+---
+
+## 📖 Learning Outcomes
+
+This project reflects my **Month 3 journey into Data Science**, showcasing skills in:  
+- **Data Wrangling** with Pandas & Regex  
+- **Feature Engineering** for new insights  
+- **EDA & Visualization** (Matplotlib, Seaborn, Plotly, Folium)  
+- **Business Storytelling** – turning raw data into actionable strategy  
+
+---
+
+## 📝 Acknowledgements
+This dataset and project form part of my **AlmaBetter Data Science program**.  
+Grateful to AlmaBetter, Amity Online, and Woolf University for structured learning and support.
+
+---------------
